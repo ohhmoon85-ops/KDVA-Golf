@@ -410,6 +410,66 @@
     color: #2c3a2d;
   }
 
+  /* Tee-off check-in */
+  .teeoff {
+    margin-top: 26px;
+    background: var(--ivory);
+    border: 1px solid var(--line);
+    padding: 22px 22px 24px;
+  }
+  .teeoff-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    font-size: 11px;
+    color: var(--fresh);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+  .teeoff-subtitle {
+    font-family: 'Gowun Batang', serif;
+    text-align: center;
+    font-size: 13.5px;
+    color: #55634e;
+    margin-bottom: 16px;
+  }
+  .teeoff-subtitle .course {
+    color: var(--moss);
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  .teeoff-list {
+    display: grid;
+    gap: 8px;
+  }
+  .teeoff-row {
+    display: grid;
+    grid-template-columns: 76px 1fr;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-left: 3px solid var(--fresh);
+  }
+  .teeoff-row:nth-child(2) { border-left-color: var(--moss); }
+  .teeoff-row:nth-child(3) { border-left-color: var(--grass); }
+  .teeoff-time {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--moss);
+    letter-spacing: 0.04em;
+  }
+  .teeoff-names {
+    font-family: 'Gowun Batang', serif;
+    font-size: 13.5px;
+    color: #2c3a2d;
+    line-height: 1.7;
+  }
+
   /* Tee applicant notice */
   .notice {
     margin-top: 36px;
@@ -631,13 +691,13 @@
 
     <!-- Team composition -->
     <div class="teams">
-      <div class="teams-title">— Team Lineup —</div>
-      <div class="teams-subtitle">팀 편성 · 3개 티</div>
+      <div class="teams-title">— Tee Off Lineup —</div>
+      <div class="teams-subtitle">코스 A · 3개조 편성</div>
 
       <div class="team-grid">
         <div class="team">
-          <span class="badge">Team</span>
-          <span class="num">1팀</span>
+          <span class="badge">Tee Off</span>
+          <span class="num">08:06</span>
           <div class="members">
             윤의철<br>
             최진택<br>
@@ -646,8 +706,8 @@
           </div>
         </div>
         <div class="team">
-          <span class="badge">Team</span>
-          <span class="num">2팀</span>
+          <span class="badge">Tee Off</span>
+          <span class="num">08:13</span>
           <div class="members">
             박용준<br>
             이영길<br>
@@ -656,33 +716,15 @@
           </div>
         </div>
         <div class="team">
-          <span class="badge">Team</span>
-          <span class="num">3팀</span>
+          <span class="badge">Tee Off</span>
+          <span class="num">08:20</span>
           <div class="members">
             황일웅<br>
             문형철<br>
-            변지수<br>
+            송왕렬<br>
             최병문
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Tee applicants notice -->
-    <div class="notice">
-      <div class="notice-head">
-        <span class="notice-icon">⛳</span>
-        <span class="notice-title">티 신청 안내</span>
-      </div>
-      <div class="notice-body">
-        <p class="notice-names">
-          <span class="notice-label">티 신청자</span>
-          윤의철 · 박기경 · 서헌원
-        </p>
-        <p class="notice-msg">
-          위 세 분께서는 <strong>5월 1일(금)</strong>에<br>
-          티 신청을 해 주시기 바랍니다.
-        </p>
       </div>
     </div>
 
